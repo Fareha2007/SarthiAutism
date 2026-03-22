@@ -1,0 +1,54 @@
+
+name: sarthi_flutter_project
+description: Sarthi Autism Support Companion App
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.2.1
+  flutter_tts: ^4.2.5
+  audioplayers: ^6.0.1
+  url_launcher: ^6.3.0
+  http: ^1.2.0
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  cloud_firestore: ^5.0.0
+
+  flutter_native_splash: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1  
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/sarthi_logo.png
+
+# 🔥 Splash config
+flutter_native_splash:
+  color: "#F7F8FC"
+  image: assets/images/sarthi_logo.png
+  android: true
+  ios: false
+  android_gravity: center
+  ios_content_mode: center
+
+# 🔥 App Icon config
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/sarthi_logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/sarthi_logo.png"
